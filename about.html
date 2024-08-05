@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Simple CRUD App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='todolistimage.jpg') }}" class="bg-image" alt="Background Image">
+    <div class="container">
+        <h2 class="text-center">About This Application</h2>
+        <p>This application allows you to manage your TODO tasks. You can add, edit, and delete tasks. This app uses Flask for the backend and SQLite for the database.</p>
+        <p>&copy; 2024 Simple CRUD App. All rights reserved.</p>
+        <div class="text-center">
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
